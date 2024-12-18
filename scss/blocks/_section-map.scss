@@ -1,0 +1,28 @@
+.section-map {
+  position: relative;
+  padding: 180px 0;
+
+  @include mediaTablet {
+    padding: 90px 0;
+    margin-bottom: 44px;
+  }
+
+  &::before {
+    content: 'V';
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+    font-weight: 700;
+    @include decorNumber;
+    top: 180px;
+    line-height: 1;
+  }
+
+  &__title {
+    margin-bottom: 88px;
+  }
+}
+
+.map {
+  height: 358px;
+  background: #626262;
+}
